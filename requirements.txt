@@ -1,0 +1,4 @@
+pandas==2.2.2
+textblob
+spacy==2.3.9
+streamlit==1.35.0
