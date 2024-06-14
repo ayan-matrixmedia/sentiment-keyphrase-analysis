@@ -5,7 +5,7 @@ from collections import Counter
 from textblob import TextBlob
 import spacy
 
-nlp = spacy.load("en_core_web_sm") #if you get error here download the model using -> "python -m spacy download en_core_web_sm"
+nlp = spacy.load("en_core_web_sm") 
 class SentimentPhrases:
     def __init__(self,dataset):
         try:

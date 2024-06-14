@@ -1,5 +1,3 @@
-import subprocess 
-subprocess.run(["python","-m", "spacy","download","en_core_web_sm "])
 import streamlit as st 
 import pandas as pd 
 from analysis import SentimentPhrases
