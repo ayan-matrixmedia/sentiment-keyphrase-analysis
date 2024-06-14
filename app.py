@@ -5,6 +5,7 @@ def run_terminal_commands():
         # Run terminal commands
         subprocess.run(["pip","install","-r","requirements.txt"])
         subprocess.run(["python","-m", "spacy","download","en_core_web_sm"])
+        subprocess.run(["python","-m","spacy","download","en"])
     except Exception as e:
         print(f"Error occurred: {e}")
 run_terminal_commands()
