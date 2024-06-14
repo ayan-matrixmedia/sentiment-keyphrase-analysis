@@ -1,3 +1,16 @@
+import subprocess
+
+def run_terminal_commands():
+    try:
+        # Run terminal commands
+        subprocess.run(["pip","install","-r","requirements.txt"])
+        subprocess.run(["python","-m", "spacy","download","en_core_web_sm"])
+    except Exception as e:
+        print(f"Error occurred: {e}")
+run_terminal_commands()
+
+
+
 import streamlit as st 
 import pandas as pd 
 from analysis import SentimentPhrases
